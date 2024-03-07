@@ -50,29 +50,15 @@ const Weather = () => {
       setWicon(<FaCloudSun/>)
     } else if (data.weather[0].icon === '02n') {
       setWicon(<FaCloudMoon/>)
-    } else if(data.weather[0].icon === '03d') {
+    } else if(data.weather[0].icon === '03d' || data.weather[0].icon === '03n' || data.weather[0].icon === '04d' || data.weather[0].icon === '04n') {
       setWicon(<FaCloud/>)
-    } else if (data.weather[0].icon === '03n') {
-      setWicon(<FaCloud/>)
-    } else if(data.weather[0].icon === '04d') {
-      setWicon(<FaCloud/>)
-    } else if (data.weather[0].icon === '04n') {
-      setWicon(<FaCloud/>)
-    } else if(data.weather[0].icon === '09d') {
+    } else if(data.weather[0].icon === '09d' || data.weather[0].icon === '09n') {
       setWicon(<FaCloudShowersHeavy/>)
-    } else if (data.weather[0].icon === '09n') {
-      setWicon(<FaCloudShowersHeavy/>)
-    } else if(data.weather[0].icon === '10d') {
+    } else if(data.weather[0].icon === '10d' || data.weather[0].icon === '10n') {
       setWicon(<FaCloudRain/>)
-    } else if (data.weather[0].icon === '10n') {
-      setWicon(<FaCloudRain/>)
-    } else if(data.weather[0].icon === '11d') {
+    } else if(data.weather[0].icon === '11d' || data.weather[0].icon === '11n') {
       setWicon(<FaBolt/>)
-    } else if (data.weather[0].icon === '11n') {
-      setWicon(<FaBolt/>)
-    } else if (data.weather[0].icon === '13n') {
-      setWicon(<FaSnowflake/>)
-    } else if (data.weather[0].icon === '13n') {
+    } else if (data.weather[0].icon === '13n' || data.weather[0].icon === '13n'){
       setWicon(<FaSnowflake/>)
     } else{
       setWicon(<FaSmog/>)
